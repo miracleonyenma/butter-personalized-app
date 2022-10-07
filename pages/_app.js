@@ -80,7 +80,7 @@ import Router from "next/router";
 const renderSnippet = () => {
   const SEGMENT_KEY = process.env.SEGMENT_KEY;
   const opts = {
-    apiKey: "8Nwl3y2dzdXmTNGPrx35oi3VVdE1AOZx",
+    apiKey: SEGMENT_KEY,
     // note: the page option only covers SSR tracking.
     page: true,
   };
@@ -96,7 +96,7 @@ const personyzeSnippet = () => {
     var s = d.createElement('script'),
       u = s.onload===undefined && s.onreadystatechange===undefined,
       i = 0,
-      f = function() {window._S_T ? (_S_T.async=true) && _S_T.setup(6668, "localhost:3000") : i++<120 && setTimeout(f, 600)},
+      f = function() {window._S_T ? (_S_T.async=true) && _S_T.setup(6668, "localhost:3000 personalized-app.netlify.app 0a51-197-210-227-11.eu.ngrok.io") : i++<120 && setTimeout(f, 600)},
       h = d.getElementsByTagName('head');
     s.async = true;
     s.src = '\/\/counter.personyze.com\/stat-track-lib.js';
